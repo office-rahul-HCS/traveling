@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveling_ZIG</title>
+ 
+    <link rel="shortcut icon" type="image/png" href="./swarm.png"/>
+    <link rel="stylesheet" href="./travel.css">
+    <style>
+        
+    #loading{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #fff
+	url('http://garudapr.in/wp-content/uploads/2017/12/loader.gif')
+	 no-repeat center center;	
+	z-index: 99999;
+}
+    </style>
+
+</head>
+<body onload="myFunction()">
+    <div id="loading" style="display: none;"> </div>
+    
+    <div id="logo">
+        <img src="./swarm.png" alt="logo">
+    </div>
+    <header>
+     <ul class="nav">
+        <!-- 1-class active -->
+        <li  > <a href="#">How</a> </li> 
+            <li> <a href="#">Plan-Trip</a> </li>
+            <li> <a href="#"> Host-Trip</a>
+            </a></li>
+            <li><a href="#">Join-Trip</a></li>
+        </ul>
+    </header>
+    <section class="main_content">
+        <ul>
+            <li class="one-bar">
+                <div>
+                    <span class="travel_word">T</span>
+                    <strong>Lorem </strong>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloremque obcaecati animi fugit! Quia et aut, libero delectus provident aliquam quisquam, commodi expedita ad qui, quas placeat possimus eaque perferendis.</p>
+                </div>
+
+
+
+
+
+            </li>
+            <li class="two-bar"> <div>
+                <span class="travel_word">R</span>
+                <strong>Lorem </strong>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laborum non assumenda tempora a adipisci earum nisi? Dolores magnam aspernatur officia quasi, esse cum, explicabo, voluptas temporibus corrupti iusto nisi.</p>
+            </div></li>
+            <li class="three-bar"> <div>
+                <span class="travel_word">A</span>
+                <strong>Lorem </strong>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolore nulla corrupti quisquam officiis asperiores ab eius incidunt id corporis earum debitis vel doloremque blanditiis maiores quae, voluptatem similique magnam.</p>
+            </div></li>
+            <li class="four-bar"> <div>
+                <span class="travel_word">V</span>
+                <strong>Lorem </strong>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore assumenda repudiandae fugit. Atque, consequuntur repellat praesentium eaque quas eveniet nisi eligendi similique deleniti tempora tempore laboriosam, facilis voluptatem optio eius?</p>
+            </div></li>
+            <li class="five-bar"> <div>
+                <span class="travel_word">L</span>
+                <strong>Lorem </strong>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, dolore voluptatem ab exercitationem mollitia at libero sed maiores magni dolor! Quae quasi aut ipsa recusandae reiciendis corporis, molestiae voluptates magni!</p>
+            </div></li>
+
+
+        </ul>
+        <!-- <div class="blue_bar">a</div> -->
+
+    </section>
+    <section>
+        
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="./118Z_2012.w017.n001.327B.p15.327.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="./19Z_2102.w026.n002.191B.p1.191.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="./146Z_2107.w026.n002.567B.p1.567.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    </section>
+
+
+    <script>
+        var preloader=document.getElementById("loading");
+
+        function myFunction(){
+            preloader.style.display='none';
+        }
+        var slideIndex = 0;
+showSlides();
+//hi
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+    </script>
+    
+</body>
+</html>
